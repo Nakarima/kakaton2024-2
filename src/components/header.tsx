@@ -19,7 +19,7 @@ const Header: React.FC = () => {
 
                 <HStack spacing={8} alignItems="center">
                     <Image
-                        src="/logo.webp"
+                        src="/kakaton2024-2/logo.webp"
                         alt="Logo"
                         mx="auto"
                         boxSize="32px"

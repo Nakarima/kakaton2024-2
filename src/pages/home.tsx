@@ -17,7 +17,7 @@ export default () => {
         >
           <Box mb={10} mt={4}>
             <Image
-              src="/logo.webp"
+              src="/kakaton2024-2/logo.webp"
               alt="Logo"
               mx="auto"
               boxSize="150px"

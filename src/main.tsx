@@ -31,7 +31,7 @@ const Wrapper = () => {
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/kakaton2024-2/",
     element: <Wrapper />,
     children: [
       {
