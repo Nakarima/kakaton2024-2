@@ -4,8 +4,10 @@ import {
     Text,
     VStack,
     Divider,
+    Button,
 } from '@chakra-ui/react';
 import { Company } from '../types';
+import { StarIcon } from '@chakra-ui/icons';
 
 interface CompanySummaryProps {
     companyDto: Company;
@@ -26,6 +28,7 @@ const CompanySummary: React.FC<CompanySummaryProps> = ({ companyDto }) => {
                     <Text>Email: {company.email}</Text>
                 </Box>
 
+                <Button colorScheme='pink' leftIcon={ <StarIcon />}>Magic Match</Button>
                 <Box>
                     <Text fontSize="lg" fontWeight="bold">Nasza strategia społecznego wpływu</Text>
                     <Text><strong>Misja:</strong> {company.social_impact_strategy.mission}</Text>

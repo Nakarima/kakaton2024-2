@@ -6,8 +6,10 @@ import {
     Text,
     VStack,
     Divider,
+    Button,
 } from '@chakra-ui/react';
 import { NGO } from '../types';
+import { StarIcon } from '@chakra-ui/icons';
 
 interface NGOSummaryProps {
     ngoDTO: NGO;
@@ -31,6 +33,8 @@ const NGOSummary: React.FC<NGOSummaryProps> = ({ ngoDTO }) => {
                 <Box>
                     <Text>Email: {ngo.email}</Text>
                 </Box>
+
+                <Button colorScheme='pink' leftIcon={ <StarIcon />}>Magic Match</Button>
 
                 <Divider />
 
