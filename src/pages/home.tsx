@@ -35,7 +35,7 @@ export default () => {
           <Stack direction="column" spacing={4} align="center">
             <Button
               as={RouterLink}
-              to="/add/company"
+              to="/kakaton2024-2/add/company"
               colorScheme="teal"
               size="lg"
               boxShadow="xl"
@@ -45,7 +45,7 @@ export default () => {
     
             <Button
               as={RouterLink}
-              to="/add/foundation"
+              to="/kakaton2024-2/add/foundation"
               colorScheme="blue"
               size="lg"
               boxShadow="xl"
