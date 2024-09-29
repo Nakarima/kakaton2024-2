@@ -10,6 +10,7 @@ import {
 } from '@chakra-ui/react';
 import { NGO } from '../types';
 import { StarIcon } from '@chakra-ui/icons';
+import { useNavigate, useParams, useSearchParams } from 'react-router-dom';
 
 interface NGOSummaryProps {
     ngoDTO: NGO;
@@ -17,11 +18,21 @@ interface NGOSummaryProps {
 
 const NGOSummary: React.FC<NGOSummaryProps> = ({ ngoDTO }) => {
     const { ngo } = ngoDTO
+    const {id} = useParams<{id:string}>()
+    const [query] = useSearchParams()
+    const navigate = useNavigate()
+
+    const magic = async () => {
+        const res = await fetch(`https://ngos-companies-matcher-gavdo.ondigitalocean.app/matches/ngos/${id}`).then((r) => r.json())
+
+        navigate(`/kakaton2024-2/org/${res._id}?from-match=1`)
+    }
+
     return (
         <Box maxW="4xl" w="100%" mx="auto" p={8} bg="white" borderRadius="lg" boxShadow="lg" mt={6}>
 
             <VStack spacing={6} align="stretch">
-
+            {query.get('from-match') && <Box><Heading>Its a match!</Heading></Box>}
                 <Box>
                     <Heading as="h2" size="lg">{ngo.name}</Heading>
                 </Box>
@@ -34,7 +45,7 @@ const NGOSummary: React.FC<NGOSummaryProps> = ({ ngoDTO }) => {
                     <Text>Email: {ngo.email}</Text>
                 </Box>
 
-                <Button colorScheme='pink' leftIcon={ <StarIcon />}>Magic Match</Button>
+                {!query.get('from-match') && <Button colorScheme='pink' onClick={magic} leftIcon={ <StarIcon />}>Magic Match</Button>}
 
                 <Divider />
 
