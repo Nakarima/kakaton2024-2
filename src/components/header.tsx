@@ -28,24 +28,24 @@ const Header: React.FC = () => {
                     />
                     <Heading as="h1" size="lg" color="white">
 
-                        <Link as={RouterLink} to="/">
+                        <Link as={RouterLink} to="/kakaton2024-2/">
                             FundConnect
                         </Link>
                     </Heading>
                     <HStack as="nav" spacing={4} display={{ base: 'none', md: 'flex' }}>
-                        <Link as={RouterLink} to="/" px={2} py={1} rounded="md" _hover={{ bg: 'teal.400' }} color="white">
+                        <Link as={RouterLink} to="/kakaton2024-2/" px={2} py={1} rounded="md" _hover={{ bg: 'teal.400' }} color="white">
                             Strona główna
                         </Link>
-                        <Link as={RouterLink} to="/add/company" px={2} py={1} rounded="md" _hover={{ bg: 'teal.400' }} color="white">
+                        <Link as={RouterLink} to="/kakaton2024-2/add/company" px={2} py={1} rounded="md" _hover={{ bg: 'teal.400' }} color="white">
                             Dodaj swoja organizację
                         </Link>
-                        <Link as={RouterLink} to="/add/foundation" px={2} py={1} rounded="md" _hover={{ bg: 'teal.400' }} color="white">
+                        <Link as={RouterLink} to="/kakaton2024-2/add/foundation" px={2} py={1} rounded="md" _hover={{ bg: 'teal.400' }} color="white">
                             Dodaj swoja fundację
                         </Link>
-                        <Link as={RouterLink} to="/search/foundation" px={2} py={1} rounded="md" _hover={{ bg: 'teal.400' }} color="white">
+                        <Link as={RouterLink} to="/kakaton2024-2/search/foundation" px={2} py={1} rounded="md" _hover={{ bg: 'teal.400' }} color="white">
                             Przegladaj fundacje
                         </Link>
-                        <Link as={RouterLink} to="/search/company" px={2} py={1} rounded="md" _hover={{ bg: 'teal.400' }} color="white">
+                        <Link as={RouterLink} to="/kakaton2024-2/search/company" px={2} py={1} rounded="md" _hover={{ bg: 'teal.400' }} color="white">
                             Przegladaj organizacje
                         </Link>
                     </HStack>
@@ -68,16 +68,16 @@ const Header: React.FC = () => {
             {isOpen ? (
                 <Box pb={4} display={{ md: 'none' }}>
                     <Stack as="nav" spacing={4}>
-                        <Link as={RouterLink} to="/" px={2} py={1} rounded="md" _hover={{ bg: 'teal.400' }} color="white">
+                        <Link as={RouterLink} to="/kakaton2024-2/" px={2} py={1} rounded="md" _hover={{ bg: 'teal.400' }} color="white">
                             Strona główna
                         </Link>
-                        <Link as={RouterLink} to="/create-organization" px={2} py={1} rounded="md" _hover={{ bg: 'teal.400' }} color="white">
+                        <Link as={RouterLink} to="/kakaton2024-2/create-organization" px={2} py={1} rounded="md" _hover={{ bg: 'teal.400' }} color="white">
                             Załóż organizację
                         </Link>
-                        <Link as={RouterLink} to="/create-foundation" px={2} py={1} rounded="md" _hover={{ bg: 'teal.400' }} color="white">
+                        <Link as={RouterLink} to="/kakaton2024-2/create-foundation" px={2} py={1} rounded="md" _hover={{ bg: 'teal.400' }} color="white">
                             Załóż fundację
                         </Link>
-                        <Link as={RouterLink} to="/search" px={2} py={1} rounded="md" _hover={{ bg: 'teal.400' }} color="white">
+                        <Link as={RouterLink} to="/kakaton2024-2/search" px={2} py={1} rounded="md" _hover={{ bg: 'teal.400' }} color="white">
                             Wyszukaj
                         </Link>
                     </Stack>

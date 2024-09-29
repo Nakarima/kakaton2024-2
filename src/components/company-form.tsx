@@ -37,7 +37,7 @@ const CreateCompanyForm: React.FC = () => {
         e.preventDefault();
         console.log('Form Data Submitted:', formData);
         const res = await createCompany(formData)
-        navigate('/org/' + res._id)
+        navigate('/kakaton2024-2/org/' + res._id)
     };
 
     return (

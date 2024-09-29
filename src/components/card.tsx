@@ -32,7 +32,7 @@ interface CompanyCardProps {
 
 const NGOCard: React.FC<NGOCardProps> = ({ name, description, goals, teamCount, id }) => {
   return (
-    <Link to={`/foundation/${id}`}>
+    <Link to={`/kakaton2024-2/foundation/${id}`}>
       <Box
         p={5}
         shadow="md"
@@ -71,7 +71,7 @@ const NGOCard: React.FC<NGOCardProps> = ({ name, description, goals, teamCount, 
 
 const CompanyCard: React.FC<CompanyCardProps> = ({ name, description, socialImpactStrategy, totalBudget, id }) => {
   return (
-    <Link to={`/org/${id}`}>
+    <Link to={`/kakaton2024-2/org/${id}`}>
       <Box
         p={5}
         shadow="md"

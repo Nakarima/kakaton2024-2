@@ -39,7 +39,7 @@ const CreateFoundationForm: React.FC = () => {
         e.preventDefault();
         console.log('Form Data Submitted:', formData);
         const res = await createFoundation(formData)
-        navigate('/foundation/' + res._id)
+        navigate('/kakaton2024-2/foundation/' + res._id)
     };
 
     return (
