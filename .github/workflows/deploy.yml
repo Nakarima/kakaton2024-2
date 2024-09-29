@@ -18,7 +18,7 @@ jobs:
         uses: actions/setup-node@v4
 
       - name: Go to repo
-        uses: run cd kakaton-ngos
+        run: cd kakaton-ngos
 
       - name: Install dependencies
         uses: bahmutov/npm-install@v1
