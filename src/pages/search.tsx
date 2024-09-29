@@ -1,4 +1,4 @@
-import { Center, Container, Grid, HStack, Spinner } from "@chakra-ui/react"
+import { Center, HStack, Spinner } from "@chakra-ui/react"
 import { useCompanies, useFoundations } from "../orgs"
 import { CompanyCard, NGOCard } from "../components/card"
 import { useParams } from "react-router-dom"

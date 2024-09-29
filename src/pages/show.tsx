@@ -1,17 +1,8 @@
 
-import React from 'react';
 import {
-    Box,
-    Heading,
-    Text,
-    VStack,
-    HStack,
-    Divider,
-    Button,
     Center,
     Spinner,
 } from '@chakra-ui/react';
-import { NGO } from '../types';
 import NGOSummary from '../components/ngo-summary';
 import { useParams } from 'react-router-dom';
 import { useCompany, useFoundation } from '../orgs';

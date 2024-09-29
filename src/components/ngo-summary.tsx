@@ -5,9 +5,7 @@ import {
     Heading,
     Text,
     VStack,
-    HStack,
     Divider,
-    Button,
 } from '@chakra-ui/react';
 import { NGO } from '../types';
 

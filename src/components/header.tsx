@@ -1,5 +1,5 @@
 import React from 'react';
-import { Image, Box, Flex, HStack, Link, IconButton, useDisclosure, Stack, Button, Heading } from '@chakra-ui/react';
+import { Image, Box, Flex, HStack, Link, IconButton, useDisclosure, Stack, Heading } from '@chakra-ui/react';
 import { HamburgerIcon, CloseIcon } from '@chakra-ui/icons';
 import { Link as RouterLink } from 'react-router-dom';
 

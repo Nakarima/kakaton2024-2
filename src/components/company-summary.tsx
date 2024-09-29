@@ -1,11 +1,9 @@
 import React from 'react';
 import {
     Box,
-    Heading,
     Text,
     VStack,
     Divider,
-    Button,
 } from '@chakra-ui/react';
 import { Company } from '../types';
 

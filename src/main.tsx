@@ -1,4 +1,4 @@
-import React, { StrictMode } from 'react'
+import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
 import { createBrowserRouter, Outlet, RouterProvider } from 'react-router-dom';
@@ -6,7 +6,7 @@ import Home from './pages/home.tsx';
 import Add from './pages/add.tsx';
 import Search from './pages/search.tsx';
 import Show from './pages/show.tsx';
-import { ChakraProvider, Heading, HStack, theme, VStack } from '@chakra-ui/react';
+import { ChakraProvider, VStack } from '@chakra-ui/react';
 import Header from './components/header.tsx';
 import { Footer } from './components/footer.tsx';
 import { QueryClient, QueryClientProvider } from 'react-query';

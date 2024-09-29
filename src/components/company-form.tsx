@@ -8,7 +8,6 @@ const CreateCompanyForm: React.FC = () => {
     const {
         formData,
         handleAddItem,
-        handleArrayChange,
         handleChange,
         handleRemoveItem
     } = useFormData<Company>({

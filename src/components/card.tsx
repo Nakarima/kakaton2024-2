@@ -6,14 +6,13 @@ import {
   Text,
   Badge,
   VStack,
-  Stack,
   HStack,
   Divider,
   Icon,
   Tooltip,
 } from '@chakra-ui/react';
 import { StarIcon, CheckCircleIcon, AtSignIcon } from '@chakra-ui/icons';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 interface NGOCardProps {
   id: string;
