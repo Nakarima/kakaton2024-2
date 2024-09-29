@@ -29,7 +29,7 @@ const Header: React.FC = () => {
                     <Heading as="h1" size="lg" color="white">
 
                         <Link as={RouterLink} to="/kakaton2024-2/">
-                            FundConnect
+                            Bridge4Good
                         </Link>
                     </Heading>
                     <HStack as="nav" spacing={4} display={{ base: 'none', md: 'flex' }}>
