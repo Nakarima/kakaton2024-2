@@ -37,18 +37,21 @@ const Header: React.FC = () => {
                             Strona główna
                         </Link>
                         <Link as={RouterLink} to="/add/company" px={2} py={1} rounded="md" _hover={{ bg: 'teal.400' }} color="white">
-                            Załóż organizację
+                            Dodaj swoja organizację
                         </Link>
                         <Link as={RouterLink} to="/add/foundation" px={2} py={1} rounded="md" _hover={{ bg: 'teal.400' }} color="white">
-                            Załóż fundację
+                            Dodaj swoja fundację
                         </Link>
-                        <Link as={RouterLink} to="/search" px={2} py={1} rounded="md" _hover={{ bg: 'teal.400' }} color="white">
-                            Wyszukaj
+                        <Link as={RouterLink} to="/search/foundation" px={2} py={1} rounded="md" _hover={{ bg: 'teal.400' }} color="white">
+                            Przegladaj fundacje
+                        </Link>
+                        <Link as={RouterLink} to="/search/company" px={2} py={1} rounded="md" _hover={{ bg: 'teal.400' }} color="white">
+                            Przegladaj organizacje
                         </Link>
                     </HStack>
                 </HStack>
 
-                <Flex alignItems="center">
+                {/* <Flex alignItems="center">
                     <Button
                         as={RouterLink}
                         to="/login"
@@ -59,7 +62,7 @@ const Header: React.FC = () => {
                     >
                         Zaloguj się
                     </Button>
-                </Flex>
+                </Flex> */}
             </Flex>
 
             {isOpen ? (

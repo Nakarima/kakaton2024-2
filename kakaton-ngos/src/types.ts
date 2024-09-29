@@ -3,6 +3,7 @@ export interface NGO {
     ngo: {
         name: string;
         description: string;
+        email: string;
         strategy: {
             mission: string;
             vision: string;
@@ -44,6 +45,7 @@ export interface Company {
     company: {
         name: string;
         description: string;
+        email: string;
         social_impact_strategy: {
             mission: string;
             vision: string;

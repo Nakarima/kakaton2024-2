@@ -29,7 +29,7 @@ export default () => {
             Witaj w Aplikacji Łączącej Organizacje z Fundacjami
           </Heading>
           <Text fontSize="xl" mb={6} px={8}>
-            Naszym celem jest stworzenie platformy, która umożliwia łatwe połączenie organizacji z fundacjami, aby razem mogli wspierać lokalne i globalne inicjatywy. Dołącz do nas już dziś!
+            Naszym celem jest stworzenie platformy, która umożliwia łatwe połączenie organizacji z fundacjami, aby razem mogli wspierać lokalne i globalne inicjatywy. <br/>Dołącz do nas już dziś!
           </Text>
     
           <Stack direction="column" spacing={4} align="center">
@@ -39,7 +39,6 @@ export default () => {
               colorScheme="teal"
               size="lg"
               boxShadow="xl"
-              _hover={{ bg: 'teal.400' }}
             >
               Załóż konto organizacji
             </Button>
@@ -50,20 +49,8 @@ export default () => {
               colorScheme="blue"
               size="lg"
               boxShadow="xl"
-              _hover={{ bg: 'blue.400' }}
             >
               Załóż konto fundacji
-            </Button>
-    
-            <Button
-              as={RouterLink}
-              to="/search"
-              colorScheme="green"
-              size="lg"
-              boxShadow="xl"
-              _hover={{ bg: 'green.400' }}
-            >
-              Wyszukaj organizacje/fundacje
             </Button>
           </Stack>
     
