@@ -18,7 +18,7 @@ interface NGOCardProps {
   id: string;
   name: string;
   description: string;
-  goals: string[];
+  tags: string[];
   teamCount: number;
 }
 
@@ -28,9 +28,10 @@ interface CompanyCardProps {
   description: string;
   socialImpactStrategy: string;
   totalBudget: number;
+  tags: string[];
 }
 
-const NGOCard: React.FC<NGOCardProps> = ({ name, description, goals, teamCount, id }) => {
+const NGOCard: React.FC<NGOCardProps> = ({ name, description, tags, teamCount, id }) => {
   return (
     <Link to={`/kakaton2024-2/foundation/${id}`}>
       <Box
@@ -48,9 +49,9 @@ const NGOCard: React.FC<NGOCardProps> = ({ name, description, goals, teamCount, 
         <Text mb={4}>{description}</Text>
 
         <HStack spacing={4} wrap="wrap">
-          {goals.map((goal, index) => (
+          {tags.map((tag, index) => (
             <Badge key={index} colorScheme="green" variant="solid" fontSize="0.8em">
-              {goal}
+              {tag}
             </Badge>
           ))}
         </HStack>
@@ -69,7 +70,7 @@ const NGOCard: React.FC<NGOCardProps> = ({ name, description, goals, teamCount, 
   );
 };
 
-const CompanyCard: React.FC<CompanyCardProps> = ({ name, description, socialImpactStrategy, totalBudget, id }) => {
+const CompanyCard: React.FC<CompanyCardProps> = ({ name, description, tags, socialImpactStrategy, totalBudget, id }) => {
   return (
     <Link to={`/kakaton2024-2/org/${id}`}>
       <Box
@@ -98,6 +99,13 @@ const CompanyCard: React.FC<CompanyCardProps> = ({ name, description, socialImpa
             <Icon as={CheckCircleIcon} color="green.500" />
             <Text fontSize="sm">Całkowity budżet: {totalBudget} PLN</Text>
           </HStack>
+          <HStack spacing={4} wrap="wrap">
+          {tags.map((tag, index) => (
+            <Badge key={index} colorScheme="green" variant="solid" fontSize="0.8em">
+              {tag}
+            </Badge>
+          ))}
+        </HStack>
         </VStack>
       </Box>
     </Link>
