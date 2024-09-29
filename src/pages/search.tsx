@@ -82,7 +82,7 @@ const SearchFoundations = () => {
 
     return (
         <HStack flexWrap='wrap' justifyContent={'center'} mt={8}>
-            {tags.length > 0 && <HStack>
+            {tags.length > 0 && <HStack w="100%" justifyContent={'center'}>
                 <FilterOptions tags={tags} checkedTags={checkedTags} setCheckedTags={setCheckedTags} />
             </HStack>}
             {filteredFoundations.map((f, index) => (
@@ -119,7 +119,7 @@ const SearchCompany = () => {
 
     return (
         <HStack flexWrap='wrap' justifyContent={'center'} mt={8}>
-            {tags.length > 0 && <HStack>
+            {tags.length > 0 && <HStack w="100%" justifyContent={'center'}>
                 <FilterOptions tags={tags} checkedTags={checkedTags} setCheckedTags={setCheckedTags} />
             </HStack>}
             {filteredCoompanies.map((f, index) => (
